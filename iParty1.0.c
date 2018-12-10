@@ -24,25 +24,25 @@ int main()
         printf("\n#                            #");
         printf("\n#           iPARTY           #");
         printf("\n#                            #");
-        printf("\n#      DETECTOR DE FESTAS    #");
+        printf("\n#     DETECTOR DE FESTAS     #");
         printf("\n#                            #");
         printf("\n#                            #");
         printf("\n#                            #");
         printf("\n#                            #");
         printf("\n#                            #");
         printf("\n#                            #");
-        printf("\n# Vers„o alfa 4.0            #");
+        printf("\n#       Vers√£o alfa 1.0      #");
         printf("\n##############################");
         printf("\n\n\n\n\n");
         textcolor(5);
-        printf("\nEscolha o que vocÍ quer fazer: ");
+        printf("\nEscolha o que voc√™ quer fazer: ");
         printf("\n <1> Cadastrar festa");
         printf("\n <2> Procurar festa");
         printf("\n <3> Fechar programa \n");
         textcolor(15);scanf("%d", &opcao);
         while(opcao < 1 || opcao > 3)
         {
-            printf("\n OpÁ„o inv·lida, digite novamente: ");
+            printf("\n Op√ß√£o inv√°lida, digite novamente: ");
             scanf("%d", &opcao);
         }
         system("cls");
@@ -62,13 +62,13 @@ int main()
             textcolor(15);gets(nomeFesta);
             textcolor(5);printf("\n Data da festa: \n");
             textcolor(15);gets(dataFesta);
-            textcolor(5);printf("\n Hor·rio da festa(hh:mm): \n");
+            textcolor(5);printf("\n Hor√°rio da festa(hh:mm): \n");
             textcolor(15);gets(horaFesta);
             textcolor(5);printf("\n Local da festa: \n");
             textcolor(15);gets(localFesta);
             textcolor(5);printf("\n Ingresso: \n");
             textcolor(15);gets(ingressoFesta);
-            textcolor(5);printf("\n DescriÁ„o da festa: \n");
+            textcolor(5);printf("\n Descri√ß√£o da festa: \n");
             textcolor(15);gets(descricaoFesta);
 
             FILE *pFesta;
@@ -89,10 +89,10 @@ int main()
             textcolor(5);
             fprintf(pFesta,"\n\n Nome : %s", nomeFesta);
             fprintf(pTodas,"\n\n Data: %s", dataFesta);
-            fprintf(pFesta,"\n\n Hor·rio : %s", horaFesta);
+            fprintf(pFesta,"\n\n Hor√°rio : %s", horaFesta);
             fprintf(pFesta,"\n\n Local : %s \n", localFesta);
             fprintf(pFesta,"\n\n Ingresso : %s \n", ingressoFesta);
-            fprintf(pFesta,"\n\n DescriÁ„o : %s \n", descricaoFesta);
+            fprintf(pFesta,"\n\n Descri√ß√£o : %s \n", descricaoFesta);
             fclose(pFesta);
             textcolor(3);
             fprintf(pTodas,"\n##############################");
@@ -102,11 +102,11 @@ int main()
             fprintf(pTodas,"\n##############################\n");
             textcolor(5);
             fprintf(pTodas,"\n\n Nome : %s", nomeFesta);
-            fprintf(pTodas,"\n\n Hor·rio : %s", dataFesta);
-            fprintf(pTodas,"\n\n Hor·rio : %s", horaFesta);
+            fprintf(pTodas,"\n\n Hor√°rio : %s", dataFesta);
+            fprintf(pTodas,"\n\n Hor√°rio : %s", horaFesta);
             fprintf(pTodas,"\n\n Local : %s \n", localFesta);
             fprintf(pTodas,"\n\n Ingresso : %s \n", ingressoFesta);
-            fprintf(pTodas,"\n\n DescriÁ„o : %s \n", descricaoFesta);
+            fprintf(pTodas,"\n\n Descri√ß√£o : %s \n", descricaoFesta);
             fclose(pTodas);
             system("\npause");
             system("cls");
